@@ -1,0 +1,74 @@
+/* =========================================
+   TEAM PAGE
+========================================= */
+
+.team-hero { padding: 105px 0 60px; background: var(--background); }
+.team-hero h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(3.2rem, 7vw, 6.5rem);
+    line-height: 0.98; letter-spacing: -5px; margin: 28px 0 40px;
+}
+.team-hero h1 span { color: var(--primary); }
+.team-hero-bottom { display: flex; justify-content: space-between; align-items: flex-end; gap: 30px; }
+.team-hero-bottom p { max-width: 450px; line-height: 1.8; }
+.team-total { text-align: right; }
+.team-total strong {
+    display: block; font-family: var(--heading-font);
+    font-size: clamp(3.5rem, 8vw, 6rem); line-height: 1;
+    letter-spacing: -4px; color: var(--primary);
+}
+.team-total span { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: var(--muted); }
+
+.team-section { background: var(--surface); padding: 90px 0 110px; }
+.team-filters { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 45px; }
+.filter-btn {
+    border: 1px solid rgba(38,97,102,.25); background: transparent; color: var(--text);
+    padding: 11px 20px; font-family: 'DM Sans', sans-serif; font-size: .8rem;
+    cursor: pointer; transition: .2s ease;
+}
+.filter-btn:hover, .filter-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.filter-btn:focus-visible { outline: 2px solid var(--primary-dark); outline-offset: 2px; }
+
+.role-group { margin-bottom: 60px; }
+.role-group.hidden { display: none; }
+.role-head {
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 18px;
+    padding-bottom: 16px; margin-bottom: 24px; border-bottom: 1px solid var(--border);
+}
+.role-head h3 { font-size: 1.7rem; color: var(--primary-dark); }
+.role-count { font-size: 11px; font-weight: 700; letter-spacing: 1.2px; color: var(--primary); }
+.role-head p { flex-basis: 100%; font-size: 13px; }
+
+.member-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(165px, 1fr)); gap: 16px; }
+.member-card {
+    background: var(--background); border: 1px solid var(--border);
+    padding: 22px 16px; text-align: center; transition: transform .25s ease;
+}
+.member-card:hover { transform: translateY(-5px); }
+.member-photo {
+    width: 88px; height: 88px; margin: 0 auto 14px; border-radius: 50%;
+    overflow: hidden; border: 3px solid var(--surface);
+}
+.member-photo img { width: 100%; height: 100%; object-fit: cover; }
+.member-card h4 { font-size: 1rem; }
+.member-role { display: block; margin-top: 4px; font-size: 11px; font-weight: 700; letter-spacing: 1px; color: var(--primary); }
+.member-card p { font-size: 12px; margin-top: 10px; line-height: 1.6; }
+.member-more { display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--primary); color: #fff; }
+.member-more .member-role { color: #D0E0D8; }
+.more-dot { font-size: 2.4rem; font-family: var(--heading-font); line-height: 1; margin-bottom: 10px; }
+
+.team-cta { background: var(--primary-dark); color: #fff; padding: 100px 0; text-align: center; }
+.team-cta .section-label { color: #A5C6B6; }
+.team-cta h2 { font-size: clamp(2.6rem, 6vw, 5rem); margin: 28px 0; letter-spacing: -3px; }
+.team-cta h2 span { color: #91B6A4; }
+.team-cta p { color: #CAD7CF; max-width: 480px; margin: 0 auto 30px; line-height: 1.8; }
+
+@media (max-width: 700px) {
+    .team-hero { padding: 75px 0 45px; }
+    .team-hero h1 { letter-spacing: -3px; }
+    .team-hero-bottom { flex-direction: column; align-items: flex-start; }
+    .team-total { text-align: left; }
+    .team-section { padding: 70px 0; }
+    .member-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .team-cta { padding: 75px 0; }
+}

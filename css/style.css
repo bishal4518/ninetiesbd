@@ -1,0 +1,314 @@
+
+/* =================================
+   NINETIES — GLOBAL STYLESHEET
+   ================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary: #266166;
+    --primary-dark: #16464A;
+    --primary-light: #7BA6A0;
+
+    --background: #F2F0E8;
+    --surface: #E8E5DA;
+    --text: #202A29;
+    --muted: #737C77;
+    --white: #FFFFFF;
+
+    --border: rgba(38, 97, 102, 0.18);
+
+    --heading-font: 'Space Grotesk', sans-serif;
+    --body-font: 'DM Sans', sans-serif;
+
+    --container: 1200px;
+}
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    font-family: var(--body-font);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* GLOBAL CONTAINER */
+
+.container {
+    width: min(var(--container), 90%);
+    margin-inline: auto;
+}
+
+/* TYPOGRAPHY */
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+    line-height: 1.08;
+    font-weight: 700;
+    letter-spacing: -0.045em;
+}
+
+p {
+    color: var(--muted);
+}
+
+/* HEADER */
+
+.site-header {
+    width: 100%;
+    border-bottom: 1px solid var(--border);
+    background: rgba(242, 240, 232, 0.92);
+    position: relative;
+    z-index: 10;
+}
+
+.navbar {
+    min-height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* লোগো এবং লেখার মাঝখানের দূরত্ব */
+    font-family: var(--heading-font);
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    color: var(--primary-dark);
+}
+
+.nav-logo {
+    height: 30px; /* আপনার লোগোর উচ্চতা অনুযায়ী কম-বেশি করতে পারেন */
+    width: auto;
+    object-fit: contain;
+}
+
+.logo .reg-mark {
+    font-size: 10px;
+    margin-left: 2px;
+    letter-spacing: 0;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-links a {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--muted);
+    transition: color 0.25s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--primary);
+}
+
+.nav-button {
+    padding: 11px 22px;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 3px;
+    transition: 0.25s ease;
+}
+
+.nav-button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+/* BUTTONS */
+
+.btn-primary,
+.btn-secondary,
+.btn-light {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 23px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.25s ease;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    border: 1px solid var(--border);
+    color: var(--primary-dark);
+}
+
+.btn-secondary:hover {
+    background: var(--surface);
+}
+
+.btn-light {
+    background: var(--background);
+    color: var(--primary-dark);
+}
+
+.btn-light:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+/* SECTION LABELS */
+
+.section-label,
+.eyebrow {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--primary);
+}
+
+/* TEXT LINKS */
+
+.text-link {
+    display: inline-block;
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--primary-light);
+    padding-bottom: 5px;
+    transition: 0.25s ease;
+}
+
+.text-link:hover {
+    color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+/* FOOTER */
+
+.site-footer {
+    background: #183F40;
+    color: var(--background);
+    padding: 65px 0 25px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.site-footer .logo {
+    color: var(--background);
+}
+
+.site-footer p {
+    color: #B1C2BB;
+    font-size: 13px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 15px 0 30px;
+}
+
+.footer-links a {
+    font-size: 12px;
+    color: #C3D0CA;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    width: 100%;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom span {
+    color: #A4B8B0;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+/* RESPONSIVE NAVIGATION */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        min-height: auto;
+        padding: 20px 0;
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .nav-button {
+        padding: 9px 15px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+}
+  

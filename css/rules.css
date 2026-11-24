@@ -1,0 +1,8 @@
+/* RULES PAGE */
+.rules-quick { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin-bottom: 70px; }
+.quick-rule { background: var(--background); border: 1px solid var(--border); padding: 24px; }
+.quick-rule h3 { font-size: 1.1rem; color: var(--primary-dark); margin-bottom: 8px; }
+.quick-rule p { font-size: 13px; line-height: 1.7; }
+.rules-heading { margin-bottom: 28px; }
+.rules-heading h2 { font-size: clamp(2rem, 4vw, 3.2rem); margin-top: 14px; }
+.rules-note { margin-top: 28px; font-size: 13px; }
