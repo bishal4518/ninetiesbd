@@ -1,0 +1,483 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery — NINETIES || 90's</title>
+    <meta name="description" content="Explore the memories, moments and visuals of the NINETIES community.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/enhance.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">
+                NINETIES<span>®</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="community.html">Community</a>
+                <a href="gallery.html" class="active">Gallery</a>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button" aria-expanded="false" aria-haspopup="true">More ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="team.html">Team</a>
+                        <a href="events.html">Events</a>
+                        <a href="rules.html">Rules</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </div>
+                <a href="https://discord.gg/MSBwhMHquM" class="nav-button">Join us ↗</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- GALLERY HERO -->
+        <section class="gallery-hero">
+            <div class="container">
+
+                <span class="eyebrow">A COLLECTION OF MOMENTS</span>
+
+                <h1>
+                    LITTLE MOMENTS.<br>
+                    <span>LASTING MEMORIES.</span>
+                </h1>
+
+                <div class="gallery-hero-bottom">
+                    <p>
+                        A glimpse into the world of NINETIES.
+                        The visuals, the people, the memories
+                        and everything in between.
+                    </p>
+
+                    <span class="gallery-counter">
+                        THE NINETIES ARCHIVE / 2025—26
+                    </span>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- FEATURED IMAGE -->
+        <section class="gallery-featured">
+            <div class="container">
+
+                <div class="featured-frame">
+                    <img
+                        src="assets/images/featured.jpg"
+                        alt="Featured NINETIES community memory"
+                    >
+
+                    <div class="featured-overlay">
+                        <span>FEATURED COLLECTION</span>
+                        <h2>THE GOOD OLD DAYS.</h2>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- MAIN GALLERY -->
+        <section class="gallery-section">
+            <div class="container">
+
+                <div class="gallery-heading">
+
+                    <div>
+                        <span class="section-label">01 / THE ARCHIVE</span>
+                        <h2>THE COLLECTION.</h2>
+                    </div>
+
+                    <p>
+                        Some things deserve to be remembered.
+                    </p>
+
+                </div>
+
+
+                <!-- FILTER BUTTONS -->
+                <div class="gallery-filters">
+
+                    <button class="filter-btn active" data-filter="all">
+                        All
+                    </button>
+
+                    <button class="filter-btn" data-filter="community">
+                        Community
+                    </button>
+
+                    <button class="filter-btn" data-filter="events">
+                        Events
+                    </button>
+
+                    <button class="filter-btn" data-filter="artwork">
+                        Artwork
+                    </button>
+
+                    <button class="filter-btn" data-filter="moments">
+                        Moments
+                    </button>
+
+                </div>
+
+
+                <!-- IMAGE GRID -->
+                <div class="gallery-grid">
+
+                    <figure class="gallery-item gallery-large" data-category="community">
+                        <button class="gallery-image" type="button"
+                            data-full="assets/images/image-01.jpg"
+                            aria-label="View community image">
+                            <img src="assets/images/image-01.jpg" alt="NINETIES community">
+                            <span class="image-open">↗</span>
+                        </button>
+                        <figcaption>
+                            <span>01 / COMMUNITY</span>
+                            <h3>THE PEOPLE.</h3>
+                        </figcaption>
+                    </figure>
+
+
+                    <figure class="gallery-item" data-category="events">
+                        <button class="gallery-image" type="button"
+                            data-full="assets/images/image-02.jpg"
+                            aria-label="View event image">
+                            <img src="assets/images/image-02.jpg" alt="NINETIES event">
+                            <span class="image-open">↗</span>
+                        </button>
+                        <figcaption>
+                            <span>02 / EVENTS</span>
+                            <h3>GOOD TIMES.</h3>
+                        </figcaption>
+                    </figure>
+
+
+                    <figure class="gallery-item" data-category="artwork">
+                        <button class="gallery-image" type="button"
+                            data-full="assets/images/image-03.jpg"
+                            aria-label="View artwork">
+                            <img src="assets/images/image-03.jpg" alt="NINETIES artwork">
+                            <span class="image-open">↗</span>
+                        </button>
+                        <figcaption>
+                            <span>03 / ARTWORK</span>
+                            <h3>CREATIVE CORNER.</h3>
+                        </figcaption>
+                    </figure>
+
+
+                    <figure class="gallery-item" data-category="moments">
+                        <button class="gallery-image" type="button"
+                            data-full="assets/images/image-04.jpg"
+                            aria-label="View memorable moment">
+                            <img src="assets/images/image-04.jpg" alt="A memorable NINETIES moment">
+                            <span class="image-open">↗</span>
+                        </button>
+                        <figcaption>
+                            <span>04 / MOMENTS</span>
+                            <h3>JUST BECAUSE.</h3>
+                        </figcaption>
+                    </figure>
+
+
+                    <figure class="gallery-item gallery-large" data-category="community">
+                        <button class="gallery-image" type="button"
+                            data-full="assets/images/image-05.jpg"
+                            aria-label="View community memory">
+                            <img src="assets/images/image-05.jpg" alt="NINETIES community memory">
+                            <span class="image-open">↗</span>
+                        </button>
+                        <figcaption>
+                            <span>05 / COMMUNITY</span>
+                            <h3>BETTER TOGETHER.</h3>
+                        </figcaption>
+                    </figure>
+
+
+                    <figure class="gallery-item" data-category="events">
+                        <button class="gallery-image" type="button"
+                            data-full="assets/images/image-06.jpg"
+                            aria-label="View event memory">
+                            <img src="assets/images/image-06.jpg" alt="NINETIES event memory">
+                            <span class="image-open">↗</span>
+                        </button>
+                        <figcaption>
+                            <span>06 / EVENTS</span>
+                            <h3>ONE TO REMEMBER.</h3>
+                        </figcaption>
+                    </figure>
+
+
+                    <figure class="gallery-item" data-category="artwork">
+                        <button class="gallery-image" type="button"
+                            data-full="assets/images/image-07.jpg"
+                            aria-label="View creative artwork">
+                            <img src="assets/images/image-07.jpg" alt="Creative NINETIES artwork">
+                            <span class="image-open">↗</span>
+                        </button>
+                        <figcaption>
+                            <span>07 / ARTWORK</span>
+                            <h3>MADE WITH STYLE.</h3>
+                        </figcaption>
+                    </figure>
+
+
+                    <figure class="gallery-item" data-category="moments">
+                        <button class="gallery-image" type="button"
+                            data-full="assets/images/image-08.jpg"
+                            aria-label="View a NINETIES moment">
+                            <img src="assets/images/image-08.jpg" alt="A moment from NINETIES">
+                            <span class="image-open">↗</span>
+                        </button>
+                        <figcaption>
+                            <span>08 / MOMENTS</span>
+                            <h3>THE LITTLE THINGS.</h3>
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+                <p class="gallery-note">
+                    MORE MEMORIES. MORE STORIES. ALWAYS ROOM FOR MORE.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- CLOSING SECTION -->
+        <section class="gallery-cta">
+            <div class="container">
+
+                <span class="section-label">02 / YOUR STORY STARTS HERE</span>
+
+                <h2>
+                    EVERY MEMORY<br>
+                    STARTS <span>SOMEWHERE.</span>
+                </h2>
+
+                <p>
+                    Be part of the conversations, the moments
+                    and the memories yet to come.
+                </p>
+
+                <a href="https://discord.gg/MSBwhMHquM" class="btn-light">
+                    Become a part of it ↗
+                </a>
+
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <!-- IMAGE LIGHTBOX -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+
+        <button class="lightbox-close" type="button"
+            aria-label="Close image viewer">×</button>
+
+        <button class="lightbox-prev" type="button"
+            aria-label="Previous image">‹</button>
+
+        <img src="" alt="Expanded gallery image" id="lightbox-image">
+
+        <button class="lightbox-next" type="button"
+            aria-label="Next image">›</button>
+
+        <span class="lightbox-counter" id="lightbox-counter"></span>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">NINETIES<span>®</span></a>
+                    <p>A little nostalgia, a lot of conversations.</p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="community.html">Community</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="team.html">Team</a>
+                    <a href="events.html">Events</a>
+                    <a href="rules.html">Rules</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="terms.html">Terms</a>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="https://discord.gg/MSBwhMHquM">Join us</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2026 NINETIES || 90's. All rights reserved.</span>
+                <span>MADE FOR THE COMMUNITY.</span>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- GALLERY JAVASCRIPT -->
+    <script>
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const galleryItems = document.querySelectorAll(".gallery-item");
+
+        // FILTER IMAGES
+        filterButtons.forEach(button => {
+            button.addEventListener("click", () => {
+
+                const filter = button.dataset.filter;
+
+                filterButtons.forEach(btn => btn.classList.remove("active"));
+                button.classList.add("active");
+
+                galleryItems.forEach(item => {
+
+                    const category = item.dataset.category;
+
+                    item.classList.toggle(
+                        "hidden",
+                        filter !== "all" && category !== filter
+                    );
+
+                });
+
+            });
+        });
+
+
+        // LIGHTBOX
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImage = document.getElementById("lightbox-image");
+        const lightboxCounter = document.getElementById("lightbox-counter");
+
+        const closeButton = document.querySelector(".lightbox-close");
+        const previousButton = document.querySelector(".lightbox-prev");
+        const nextButton = document.querySelector(".lightbox-next");
+
+        let currentImages = [];
+        let currentIndex = 0;
+
+        function getVisibleImages() {
+            return [...galleryItems]
+                .filter(item => !item.classList.contains("hidden"))
+                .map(item => item.querySelector(".gallery-image"));
+        }
+
+        function showImage(index) {
+
+            currentImages = getVisibleImages();
+
+            if (!currentImages.length) return;
+
+            currentIndex = (index + currentImages.length) % currentImages.length;
+
+            const button = currentImages[currentIndex];
+
+            lightboxImage.src = button.dataset.full;
+            lightboxImage.alt = button.querySelector("img").alt;
+
+            lightboxCounter.textContent =
+                `${currentIndex + 1} / ${currentImages.length}`;
+
+        }
+
+        function openLightbox(button) {
+
+            currentImages = getVisibleImages();
+
+            currentIndex = currentImages.indexOf(button);
+
+            lightbox.classList.add("open");
+            lightbox.setAttribute("aria-hidden", "false");
+            document.body.classList.add("lightbox-active");
+
+            showImage(currentIndex);
+            closeButton.focus();
+
+        }
+
+        function closeLightbox() {
+
+            lightbox.classList.remove("open");
+            lightbox.setAttribute("aria-hidden", "true");
+            document.body.classList.remove("lightbox-active");
+
+            lightboxImage.src = "";
+
+        }
+
+        galleryItems.forEach(item => {
+
+            const button = item.querySelector(".gallery-image");
+
+            button.addEventListener("click", () => {
+                openLightbox(button);
+            });
+
+        });
+
+        closeButton.addEventListener("click", closeLightbox);
+
+        previousButton.addEventListener("click", () => {
+            showImage(currentIndex - 1);
+        });
+
+        nextButton.addEventListener("click", () => {
+            showImage(currentIndex + 1);
+        });
+
+        lightbox.addEventListener("click", event => {
+
+            if (event.target === lightbox) {
+                closeLightbox();
+            }
+
+        });
+
+        document.addEventListener("keydown", event => {
+
+            if (!lightbox.classList.contains("open")) return;
+
+            if (event.key === "Escape") closeLightbox();
+            if (event.key === "ArrowLeft") showImage(currentIndex - 1);
+            if (event.key === "ArrowRight") showImage(currentIndex + 1);
+
+        });
+
+    </script>
+
+    <script src="js/enhance.js"></script>
+</body>
+</html>

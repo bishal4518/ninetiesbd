@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Team — NINETIES || 90's</title>
+    <meta name="description" content="Meet the NINETIES team: owners, founders, admins, moderators and staff who keep the community running.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/enhance.css">
+    <link rel="stylesheet" href="css/team.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">NINETIES<span>®</span></a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="community.html">Community</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="https://discord.gg/MSBwhMHquM" class="nav-button">Join us ↗</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="team-hero">
+            <div class="container">
+                <span class="eyebrow">THE PEOPLE BEHIND IT</span>
+                <h1>MEET THE<br><span>TEAM.</span></h1>
+                <div class="team-hero-bottom">
+                    <p>From owners to crew, these are the people who moderate, organise and keep NINETIES welcoming every day.</p>
+                    <div class="team-total">
+                        <strong id="team-total">33+</strong>
+                        <span>TEAM NINETIES MEMBERS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <div class="container">
+
+                <div class="team-filters" role="group" aria-label="Filter team by tier">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="leadership">Leadership</button>
+                    <button class="filter-btn" data-filter="management">Management</button>
+                    <button class="filter-btn" data-filter="moderation">Moderation</button>
+                    <button class="filter-btn" data-filter="support">Support</button>
+                </div>
+
+                <!-- Cards are generated from js/team-data.js -->
+                <div id="team-root"></div>
+
+                <noscript><p>Please enable JavaScript to see the team list.</p></noscript>
+
+            </div>
+        </section>
+
+        <section class="team-cta">
+            <div class="container">
+                <span class="section-label">WANT TO HELP?</span>
+                <h2>JOIN THE <span>TEAM.</span></h2>
+                <p>Members who reach Level 10 can apply for staff in the apply-here channel.</p>
+                <a href="https://discord.gg/MSBwhMHquM" class="btn-light">Join NINETIES ↗</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">NINETIES<span>®</span></a>
+                    <p>A little nostalgia, a lot of conversations.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="community.html">Community</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="team.html">Team</a>
+                    <a href="events.html">Events</a>
+                    <a href="rules.html">Rules</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="terms.html">Terms</a>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="https://discord.gg/MSBwhMHquM">Join us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 NINETIES || 90's. All rights reserved.</span>
+                <span>MADE FOR THE COMMUNITY.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/team-data.js"></script>
+    <script src="js/team.js"></script>
+    <script src="js/enhance.js"></script>
+</body>
+</html>
